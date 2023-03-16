@@ -56,20 +56,20 @@ const Hero = () => {
           animate="center"
           exit="exit"
         >
-          <div className="flex flex-row h-80 mt-24 justify-center items-center text-[200px] font-thin tracking-[0.21em] cursor-default">
+          <div className="mt-24 flex h-80 cursor-default flex-row items-center justify-center text-7xl font-thin tracking-[0.21em] md:text-[200px]">
             {selectedImage}
           </div>
         </motion.div>
       </AnimatePresence>
       <AnimatePresence>
         <motion.div
-          className="flex flex-row-reverse mx-16 overflow-hidden"
+          className="mx-16 flex flex-row-reverse overflow-hidden"
           initial={{ y: "100%" }}
           animate={{ y: "0%" }}
           transition={{ duration: 0.95, ease: "easeOut" }}
         >
           <h1>
-            Hello! I’m Abdullah a digital designer and creative
+            Hello! I&apos;m Abdullah a digital designer and creative
             <br /> developer passionate about creating
             <br /> memorable experiences.
           </h1>

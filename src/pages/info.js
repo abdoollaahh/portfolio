@@ -10,7 +10,7 @@ const Info = () => {
       <Nav />
       <AnimatePresence>
         <motion.div
-          className="flex flex-col text-4xl font-md absolute left-0 w-full"
+          className="font-md absolute left-0 flex w-full flex-col text-4xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -23,12 +23,15 @@ const Info = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2 }}
           >
-            <Image
-              src="/memoji.png"
-              width={180}
-              height={180}
-              className="border rounded-full"
-            />
+            <div className="group relative">
+              <div className="absolute -inset-1 animate-spin-slow rounded-full bg-gradient-to-r  from-[#1D2B64] to-[#d9a7c7] blur transition duration-[1500ms] group-hover:blur-3xl group-hover:duration-500 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600"></div>
+              <Image
+                src="/memoji.png"
+                width={180}
+                height={180}
+                className="relative rounded-full bg-[rgb(230,230,230)] dark:bg-[rgb(27,24,27)]"
+              />
+            </div>
           </motion.h1>
           <motion.div
             initial={{ opacity: 0 }}
@@ -36,10 +39,10 @@ const Info = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="flex justify-center text-5xl m-4 font-bold">
+            <div className="m-4 flex justify-center text-5xl font-bold">
               Hey!
             </div>
-            <div className="flex flex-row justify-center mx-8 text-center text-3xl font-light">
+            <div className="mx-8 flex flex-row justify-center text-center text-3xl font-light">
               I&apos;m a Designer-Developer who creates innovative and
               user-friendly digital experiences.
               <br />

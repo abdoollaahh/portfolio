@@ -14,21 +14,23 @@ const Works = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="flex flex-row justify-center text-5xl font-bold m-4">
+          <h1 className="m-4 flex flex-row justify-center text-5xl font-bold">
             My Tech
           </h1>
-          <div className="mx-36 mt-10 flex flex-row justify-center">
-            <Tech
-              name="React"
-              images={<Image src="/react.png" width={90} height={90} />}
-            />
-            <Tech name="Tech" />
-            <Tech name="Tech" />
-          </div>
-          <div className="mx-36 mt flex flex-row justify-center">
-            <Tech name="Tech" />
-            <Tech name="Tech" />
-            <Tech name="Tech" />
+          <div className="flex flex-col items-center">
+            <div className="mx-36 mt-10 flex flex-col justify-center md:flex-row">
+              <Tech
+                name="React"
+                images={<Image src="/react.png" width={90} height={90} />}
+              />
+              <Tech name="Tech" />
+              <Tech name="Tech" />
+            </div>
+            <div className="mt mx-36 flex flex-col justify-center md:flex-row">
+              <Tech name="Tech" />
+              <Tech name="Tech" />
+              <Tech name="Tech" />
+            </div>
           </div>
         </motion.div>
       </AnimatePresence>

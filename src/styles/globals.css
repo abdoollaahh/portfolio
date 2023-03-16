@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  background: rgb(27, 24, 27);
-  color: rgb(230, 230, 230);
+body {
+  background-color: rgb(27, 24, 27);
+  color: white;
+}
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: rgb(230, 230, 230);
+    color: #475569;
+  }
 }
