@@ -2,6 +2,7 @@ import { motion, AnimatePresence, easeOut } from "framer-motion";
 import Footer from "../../components/footer";
 import Hero from "../../components/heroPage";
 import Nav from "../../components/nav";
+import Blob from "../../components/Blob";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           transition={{ duration: 0.85, ease: easeOut }}
           exit={{ opacity: 0 }}
         >
+          <Blob />
           <Hero />
         </motion.div>
       </AnimatePresence>

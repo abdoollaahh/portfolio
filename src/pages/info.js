@@ -24,7 +24,7 @@ const Info = () => {
             transition={{ duration: 1.2 }}
           >
             <div className="group relative">
-              <div className="absolute -inset-1 animate-spin-slow rounded-full bg-gradient-to-r  from-[#1D2B64] to-[#d9a7c7] blur transition duration-[1500ms] group-hover:blur-3xl group-hover:duration-500 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600"></div>
+              <div className="absolute -inset-1 animate-spin-slow rounded-full bg-gradient-to-r  from-[#1D2B64] to-[#d9a7c7] blur transition duration-700 group-hover:blur-3xl group-hover:duration-500 dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-600"></div>
               <Image
                 src="/memoji.png"
                 width={180}
@@ -40,17 +40,20 @@ const Info = () => {
             transition={{ duration: 1 }}
           >
             <div className="m-4 flex justify-center text-5xl font-bold">
-              Hey!
+              <div> Hey!</div>
             </div>
             <div className="mx-8 flex flex-row justify-center text-center text-3xl font-light">
-              I&apos;m a Designer-Developer who creates innovative and
-              user-friendly digital experiences.
-              <br />
-              My unique background in both design and development allows me to
-              seamlessly bridge the gap
-              <br /> between form and function. With a focus on intuitive design
-              and responsive development,<br></br> I deliver results that exceed
-              my clients&apos; expectations.
+              <p>
+                I&apos;m an{" "}
+                <span id="magic">Interactive Designer-Developer</span> who
+                creates innovative and user-friendly digital experiences.
+                <br />
+                My unique background in both design and development allows me to
+                seamlessly bridge the gap
+                <br /> between form and function. With a focus on intuitive
+                design and responsive development,<br></br> I deliver results
+                that exceed my clients&apos; expectations.
+              </p>
             </div>
           </motion.div>
         </motion.div>

@@ -68,11 +68,11 @@ const Hero = () => {
           animate={{ y: "0%" }}
           transition={{ duration: 0.95, ease: "easeOut" }}
         >
-          <h1>
+          <div>
             Hello! I&apos;m Abdullah a digital designer and creative
             <br /> developer passionate about creating
             <br /> memorable experiences.
-          </h1>
+          </div>
         </motion.div>
       </AnimatePresence>
     </div>
